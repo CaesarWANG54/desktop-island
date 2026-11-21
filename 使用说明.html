@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Desktop Island 使用说明</title>
+<style>body{max-width:800px;margin:48px auto;padding:0 24px;background:#101115;color:#eceef1;font:16px/1.8 system-ui,"Microsoft YaHei UI",sans-serif}h1{font-size:32px}h2{margin-top:32px;font-size:21px}a{color:#b3f6cf}code{background:#24262b;padding:3px 6px;border-radius:5px}li{margin:8px 0}.muted{color:#a5aab5}</style>
+<h1>Desktop Island</h1><p class="muted">音乐、天气、计时与游戏帧率，放在桌面顶部。</p>
+<h2>开始使用</h2><ol><li>完整解压下载包，双击 <code>Install.cmd</code> 安装；也可以直接运行 <code>DesktopIsland.exe</code>。</li><li>首次引导选择“自动”、QQ 音乐或网易云音乐。打开官方桌面播放器并开始播放。</li><li>添加自己的天气城市，最多 5 个。时间自动跟随电脑时间与时区。</li><li>需要游戏 FPS 时勾选开启，接受一次 Windows 授权，之后自动连接。</li></ol>
+<h2>日常操作</h2><ul><li>鼠标悬停约 200 毫秒展开，移开收起；<code>Ctrl + Alt + I</code> 随时展开/收起。</li><li>“音乐”页播放、暂停、切歌；没有同步歌词时可在设置中导入 LRC。</li><li>“计时”页使用倒计时或秒表。自定分钟数、提示音在设置中调整。</li><li>“天气”页切换地点；“管理地点”搜索、添加或移除城市。</li><li>右键灵动岛或托盘图标进入设置、退出；托盘双击可展开。</li></ul>
+<h2>游戏与兼容</h2><p>游戏使用无边框全屏或窗口模式。未识别的窗口游戏可在设置中选择实际 EXE。FPS 支持 DXGI 呈现路径，Vulkan/OpenGL 和独占全屏不保证可用；无数据时显示 <code>-- FPS</code>。首次启用要求当前 Windows 管理员账户授权。采集器独立运行，不注入游戏，存在少量资源开销。</p>
+<p>QQ 音乐需要系统媒体会话；网易云 3.x 可回退到本地播放日志与媒体键，建议只运行一个音乐播放器。第三方接口或客户端更新可能影响兼容性。没有可靠匹配时不显示猜测歌词。</p>
+<h2>隐私与提醒</h2><p>通知与 Codex 提醒默认关闭，按需启用。没有内置个人密钥或账号，没有遥测和自动日志上传。在线歌词发送歌曲信息，天气发送所选城市坐标；两者都可自行控制。设置和缓存保存在当前用户的 <code>%LOCALAPPDATA%\DesktopIsland</code>。</p>
+<h2>更新和卸载</h2><p>下载新 Release，完整解压、退出旧版后运行 <code>Install.cmd</code>。在 Windows“已安装的应用”中卸载 Desktop Island。默认保留设置；删除帧率组件需一次系统授权。</p>
+<p><a href="docs/GETTING_STARTED.md">完整指南</a> · <a href="docs/FAQ.md">常见问题</a> · <a href="docs/PRIVACY.md">隐私说明</a> · <a href="https://open-meteo.com/">天气来源 Open-Meteo</a></p></html>

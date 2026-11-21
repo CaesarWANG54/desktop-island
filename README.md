@@ -2,31 +2,62 @@
 
 Windows 桌面顶部的小型悬浮工具：听歌看歌词，游戏看帧率，空闲看时间与天气。
 
+**[下载 Windows 版](../../releases/latest)** · [使用指南](docs/GETTING_STARTED.md) · [常见问题](docs/FAQ.md)
+
+适用于 Windows 11 / Windows 10 22H2，64 位 x64。下载包自带运行环境，无需安装 .NET 或申请 API Key。
+
 ## 下载使用
 
 1. 在 **[Releases](../../releases/latest)** 下载 `DesktopIsland-1.3.0-win-x64.zip`。
 2. **完整解压**到普通文件夹，双击 `Install.cmd` 安装并创建桌面快捷方式。也可以直接运行 `DesktopIsland.exe`。
 3. 跟随首次引导选择音乐软件、天气城市和需要的功能。开启 FPS 时接受一次 Windows 授权，之后自动连接。
 
-下载包自带 .NET 运行环境，不需要安装 SDK、申请 API Key 或修改音乐软件。源码页面的 **Code → Download ZIP** 是开发源码，普通使用请下载 Release 中的程序包。
+请下载 Release 中的 `win-x64.zip`；**Code → Download ZIP** 是开发源码。
 
-**环境：Windows 11 / Windows 10 22H2，64 位 x64。** 界面主要使用中文。macOS、Linux 和 ARM64 不在本版支持范围内。
+<details>
+<summary>查看首次使用引导</summary>
+<p><img src="docs/first-run.png" width="470" alt="首次使用引导：选择音乐软件、天气城市和需要的功能"></p>
+</details>
 
-![首次使用引导](docs/first-run.png)
+## 四种状态，一眼看懂
 
-## 功能
+默认悬停 **200ms** 展开，移开收起。**Ctrl + Alt + I** 随时展开/收起。
 
-| 场景 | 功能 |
-| --- | --- |
-| 音乐 | QQ 音乐或网易云音乐；当前和下一句同步歌词、封面、进度、播放/暂停、上下首 |
-| 游戏 | 96 × 26 DIP 帧率胶囊，自动识别前台游戏、默认鼠标穿透 |
-| 空闲 | 读取电脑本地时间；天气图标与当日最低/最高温 |
-| 天气 | 自选城市/区县，最多保存 5 个地点；首次使用没有预设城市 |
-| 计时 | 倒计时、秒表、暂停/恢复、重开程序后保留状态 |
-| 提醒 | 可选 Windows 通知、Codex 完成提醒，以及其他 Agent 的本机通知入口 |
-| 设置 | 开机启动、音乐来源、悬停速度、顶部距离、歌词偏移、游戏列表和功能开关 |
+以下为程序界面截图，歌曲、天气与 FPS 均为示例数据。
 
-默认悬停 200ms 展开，移开收起。**Ctrl + Alt + I** 随时展开/收起；右键灵动岛或托盘图标可进入设置、退出。
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>音乐 · 看歌词，随手切歌</h3>
+<p>在 QQ 音乐或网易云音乐播放歌曲。收起显示两句歌词，展开可暂停、切换上下首。</p>
+<p><img src="docs/screenshots/music-compact.png" width="356" alt="音乐收起状态：显示当前和下一句示例歌词"></p>
+<p><img src="docs/screenshots/music.png" width="360" alt="音乐展开状态：示例歌曲、双行歌词、播放暂停和上下首按钮"></p>
+</td>
+<td width="50%" valign="top">
+<h3>天气 · 时间与晴雨随时看</h3>
+<p>在“天气 → 管理地点”添加城市，最多保存 5 个。空闲时显示电脑时间、天气图标和最低/最高温。</p>
+<p><img src="docs/screenshots/weather-compact.png" width="256" alt="空闲状态：示例时间、多云图标和最低最高温"></p>
+<p><img src="docs/screenshots/weather.png" width="360" alt="天气展开状态：北京、上海、广州的示例晴雨图标和温度"></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>计时 · 倒计时与秒表</h3>
+<p>打开“计时”，选时长后开始；也可切换秒表。收起后继续显示计时，结束时提醒。</p>
+<p><img src="docs/screenshots/timer-compact.png" width="180" alt="计时收起状态：计时图标与剩余 12 分 34 秒"></p>
+<p><img src="docs/screenshots/timer.png" width="360" alt="计时展开状态：倒计时、秒表切换、预设时长、暂停和重置"></p>
+</td>
+<td width="50%" valign="top">
+<h3>游戏 · 只留一小块帧率</h3>
+<p>首次启用 FPS 并完成 Windows 授权后，进入兼容游戏自动切换；默认鼠标穿透。</p>
+<p><img src="docs/screenshots/game.png" width="112" alt="游戏状态的小型胶囊，显示 60 FPS 示例值，并非游戏实测"></p>
+<p>推荐无边框全屏。未识别的窗口游戏可在设置里添加游戏 EXE。</p>
+<p>需要操作时，按 <strong>Ctrl + Alt + I</strong> 展开。</p>
+</td>
+</tr>
+</table>
+
+还支持可选的 Windows 通知、Codex 完成提醒与其他 Agent 的本机通知入口。右键灵动岛或托盘图标进入设置，可调整开机启动、悬停速度、位置和歌词偏移。
 
 ## 音乐和游戏兼容性
 
